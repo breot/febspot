@@ -172,4 +172,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Trigger lazy loading on initial page load
     window.addEventListener('load', lazyLoadVideos);
+
+    // Select all elements with the class "preview__btn"
+var buttons = document.querySelectorAll(".preview__btn");
+
+// Loop through each button and add click event listener
+buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        this.style.display = 'none';
+    });
+});
 })

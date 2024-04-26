@@ -102,29 +102,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // progress code 
 
-     const previewElements = document.querySelectorAll(".preview");
-     previewElements?.forEach(previewElement => {
-         const progressBar = previewElement.querySelector(".preview__bar");
-         const progressBarFill = previewElement.querySelector(".preview__fill");
- 
-         if (progressBar && progressBarFill) {
-             // Getting view data from the current preview
-             const currentViews = parseInt(progressBar.getAttribute("data-current"));
-             const totalViews = parseInt(progressBar.getAttribute("data-total"));
- 
-             if (!isNaN(currentViews) && !isNaN(totalViews) && totalViews !== 0) {
-                 // Calculating the fill percentage of the progress bar
-                 const fillPercentage = (currentViews / totalViews) * 100;
-                 // Setting the width of the progress bar fill
-                 progressBarFill.style.width = fillPercentage + "%";
-             } else {
-                 console.error("Error: Invalid view data in preview element.");
-             }
-         } else {
-             console.error("Error: Progress bar elements not found in preview element.");
-         }
-     });
-     // progress code  end
+    const previewElements = document.querySelectorAll(".preview");
+    previewElements?.forEach(previewElement => {
+        const progressBar = previewElement.querySelector(".preview__bar");
+        const progressBarFill = previewElement.querySelector(".preview__fill");
+
+        if (progressBar && progressBarFill) {
+            // Getting view data from the current preview
+            const currentViews = parseInt(progressBar.getAttribute("data-current"));
+            const totalViews = parseInt(progressBar.getAttribute("data-total"));
+
+            if (!isNaN(currentViews) && !isNaN(totalViews) && totalViews !== 0) {
+                // Calculating the fill percentage of the progress bar
+                const fillPercentage = (currentViews / totalViews) * 100;
+                // Setting the width of the progress bar fill
+                progressBarFill.style.width = fillPercentage + "%";
+            } else {
+                console.error("Error: Invalid view data in preview element.");
+            }
+        } else {
+            console.error("Error: Progress bar elements not found in preview element.");
+        }
+    });
+    // progress code  end
 
     // progress code  end
 
@@ -252,6 +252,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Select all elements with the class "preview__btn"
+    var buttons = document.querySelectorAll(".preview__btn");
 
+    // Loop through each button and add click event listener
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            this.style.display = 'none';
+        });
+    });
 
 });
