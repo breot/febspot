@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     headerInput.addEventListener('focus', () => {
         headerBody?.classList.add("active")
-        searchList?.classList.add("active")
+        // searchList?.classList.add("active")
         document.body.classList.add("darken")
     });
 
     headerInput.addEventListener('blur', () => {
         headerBody?.classList.remove("active")
-        searchList?.classList.remove("active")
+        // searchList?.classList.remove("active")
         document.body.classList.remove("darken")
     });
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             aside.classList?.remove('active');
             hamburgerButton?.classList.remove("active");
             headerBody?.classList.remove("active");
-            searchList?.classList.remove("active");
+            // searchList?.classList.remove("active");
         }
         if (mmq.matches) {
             document.body.classList.remove("darken")
