@@ -183,8 +183,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-       // Function to check if the device is mobile
-       function isMobileDevice() {
+
+    // Function to check if the device is mobile
+    function isMobileDevice() {
         return window.matchMedia("(max-width: 991px)").matches;
     }
 
@@ -237,4 +238,24 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+
+
+    var cookieAlert = document.getElementById("cookieAlert");
+    var acceptCookiesButton = document.getElementById("acceptCookies");
+
+    // Check if the user has already accepted cookies
+    var cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+    if (!cookiesAccepted) {
+        cookieAlert.style.display = "flex";
+    }
+
+    // Event listener for the accept cookies button
+    acceptCookiesButton.addEventListener("click", function () {
+        // Hide the cookie alert
+        cookieAlert.style.display = "none";
+        // Set a localStorage item to remember that the user has accepted cookies
+        localStorage.setItem("cookiesAccepted", true);
+    });
+
 })

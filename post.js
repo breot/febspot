@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     headerInput.addEventListener('focus', () => {
         headerBody?.classList.add("active")
-        // searchList?.classList.add("active")
+        searchList?.classList.add("active")
         document.body.classList.add("darken")
     });
 
     headerInput.addEventListener('blur', () => {
         headerBody?.classList.remove("active")
-        // searchList?.classList.remove("active")
+        searchList?.classList.remove("active")
         document.body.classList.remove("darken")
     });
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             aside.classList?.remove('active');
             hamburgerButton?.classList.remove("active");
             headerBody?.classList.remove("active");
-            // searchList?.classList.remove("active");
+            searchList?.classList.remove("active");
         }
         if (mmq.matches) {
             document.body.classList.remove("darken")
@@ -256,14 +256,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var buttons = document.querySelectorAll(".preview__btn");
 
     // Loop through each button and add click event listener
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
+    buttons?.forEach(function (button) {
+        button?.addEventListener("click", function () {
             this.style.display = 'none';
         });
     });
 
-       // Function to check if the device is mobile
-       function isMobileDevice() {
+    // Function to check if the device is mobile
+    function isMobileDevice() {
         return window.matchMedia("(max-width: 991px)").matches;
     }
 
@@ -315,6 +315,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 shareList.classList.remove('active');
             });
         }
+    });
+
+
+    var cookieAlert = document.getElementById("cookieAlert");
+    var acceptCookiesButton = document.getElementById("acceptCookies");
+
+    // Check if the user has already accepted cookies
+    var cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+    if (!cookiesAccepted) {
+        cookieAlert.style.display = "flex";
+    }
+
+    // Event listener for the accept cookies button
+    acceptCookiesButton.addEventListener("click", function() {
+        // Hide the cookie alert
+        cookieAlert.style.display = "none";
+        // Set a localStorage item to remember that the user has accepted cookies
+        localStorage.setItem("cookiesAccepted", true);
     });
 
 });

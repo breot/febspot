@@ -1,9 +1,6 @@
 
  
 document.addEventListener("DOMContentLoaded", function () {
-
-
-
     document.body.classList.add("loaded")
     // Creating a MediaQueryList object for the media query
     const mq = window.matchMedia('(min-width: 991px)');
@@ -23,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     headerInput.addEventListener('focus', () => {
         headerBody?.classList.add("active")
-        // searchList?.classList.add("active")
+        searchList?.classList.add("active")
         document.body.classList.add("darken")
     });
 
     headerInput.addEventListener('blur', () => {
         headerBody?.classList.remove("active")
-        // searchList?.classList.remove("active")
+        searchList?.classList.remove("active")
         document.body.classList.remove("darken")
     });
 
@@ -39,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             aside.classList?.remove('active');
             hamburgerButton?.classList.remove("active");
             headerBody?.classList.remove("active");
-            // searchList?.classList.remove("active");
+            searchList?.classList.remove("active");
         }
         if (mmq.matches) {
             document.body.classList.remove("darken")
@@ -101,4 +98,23 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    
+    var cookieAlert = document.getElementById("cookieAlert");
+    var acceptCookiesButton = document.getElementById("acceptCookies");
+
+    // Check if the user has already accepted cookies
+    var cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+    if (!cookiesAccepted) {
+        cookieAlert.style.display = "flex";
+    }
+
+    // Event listener for the accept cookies button
+    acceptCookiesButton.addEventListener("click", function() {
+        // Hide the cookie alert
+        cookieAlert.style.display = "none";
+        // Set a localStorage item to remember that the user has accepted cookies
+        localStorage.setItem("cookiesAccepted", true);
+    });
 });
