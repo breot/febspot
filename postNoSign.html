@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Post</title>
+    <link rel="icon" type="image/x-icon" href="b16eb7ffe5e3a960e2a5.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script defer="defer" src="post.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <header class="header">
+        <div class="container">
+            <div class="header__body"><a class="header__logo" href="/" title="Febspot"><img
+                        src="1afcc988f46748dfe86b.svg" alt="Febspot"></a>
+                <form class="search header__search" title="Search"><img class="search__icon"
+                        src="3fe6dd05ca0e78d6ff20.svg" alt="Febspot"> <input class="search__input" placeholder="Search">
+                </form><button class="hamburger-button header__hamburger" title="Menu"><span
+                        class="hamburger-line"></span> <span class="hamburger-line"></span> <span
+                        class="hamburger-line"></span></button> <a class="header__login" href="login.html">Log in</a>
+            </div>
+        </div>
+    </header>
+    <aside class="aside">
+        <div class="navigation aside__top">
+            <div class="aside-info navigation__aside-info">
+                <div class="login__recently">Recently in Febspoot?</div>
+                <div class="login__text">Sign up now to get your own personalized feed!</div><a
+                    class="login__google-button google-button" style="margin-bottom:7px" href="#"><img
+                        src="ae8997929dcc226d8d52.svg" alt="Google"> <span>Register with Google</span></a>
+                <div class="comments-alert__info">By registering, you agree to the <a href="#">Terms of Service</a> and
+                    <a href="">Privacy Policy</a>, including the <a href="#">Cookie Policy</a>.</div>
+            </div>
+            <ul class="navigation__list">
+                <li><a href="/">My videos</a></li>
+                <li><a href="">Statistics</a></li>
+                <li><a href="">My balance</a></li>
+                <li><a href="">Subscriptions</a></li>
+                <li><a href="">Comments</a></li>
+                <li><a href="">Referrals</a></li>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Exit</a></li>
+            </ul>
+        </div>
+        <div class="aside__middle"><a href="/about">About</a> <a href="/help">Help</a> <a href="/contacts">Contacts</a>
+        </div>
+        <div class="aside-bottom aside__bottom">
+            <div class="aside-bottom__block">
+                <div class="aside-bottom__top">Company</div>
+                <ul>
+                    <li><a href="/latest">Latest</a></li>
+                    <li><a href="/categories">Categories</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="aside-bottom__block">
+                <div class="aside-bottom__top">Contact</div>
+                <ul>
+                    <li><a href="/legal">Legal</a></li>
+                    <li><a href="/service">Terms of Service</a></li>
+                    <li><a href="/copyright">Copyright</a></li>
+                    <li><a href="/cookies">Cookies</a></li>
+                    <li><a href="/privacy">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="aside-bottom__block">
+                <div class="aside-bottom__top">Follow us</div>
+                <ul>
+                    <li><a target="_blank" href="/Telegram">Telegram</a></li>
+                    <li><a target="_blank" href="/X">X</a></li>
+                    <li><a target="_blank" href="/LinkedIn">LinkedIn</a></li>
+                    <li><a target="_blank" href="/Facebook">Facebook</a></li>
+                    <li><a target="_blank" href="/Reddit">Reddit</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="preview post"><video preload="auto" src="867b6ab1c9db83359f6b.mp4" controls
+                class="preview__video post__video"></video>
+            <div class="preview__row post__row">
+                <div class="preview__sample">
+                    <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                        <div class="preview__fill" id="progressBarFill"></div>
+                    </div>
+                    <div class="preview__views">509 000/1M views</div>
+                </div>
+                <div class="preview-actions preview__actions">
+                    <div class="share preview-actions__item"><img class="preview-actions__icon"
+                            src="19f634fb85946a31ada8.svg" alt="Share">
+                        <div class="preview-actions__text">Share</div>
+                        <div class="share__list">
+                            <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                    class="preview-actions__icon">
+                                <div class="share__place">Copy link</div>
+                            </div>
+                            <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px" alt="Fb"
+                                    class="preview-actions__icon">
+                                <div class="share__place">Facebook</div>
+                            </div>
+                            <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X" style="width:14px"
+                                    class="preview-actions__icon">
+                                <div class="share__place">X post</div>
+                            </div>
+                        </div>
+                    </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                            class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                        <div class="preview-actions__text">Save</div>
+                    </a>
+                </div>
+            </div>
+            <div class="preview__top post__top"><a class="preview__user post__user" href="#"><img class="preview__img"
+                        src="138cbb8b8049136dc3ec.png" alt="User name">
+                    <div class="preview__name">Starlink helps</div>
+                </a><img class="preview__tick post__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                <div class="preview__date post__date">12 march</div><button class="preview__btn tr-button"
+                    type="button">Follow</button>
+            </div>
+            <div class="preview__info post__info">
+                <div class="preview__title">Blue Monday - Extended Mix - Above & Beyond</div>
+                <div class="preview__text post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                    tenetur, quibusdam dolorum sapiente placeat nobis et qui alias consequatur vitae, vel nihil
+                    recusandae inventore! Culpa quis debitis ipsa itaque dolorum. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maxime tenetur, quibusdam dolorum sapiente placeat nobis et qui alias consequatur
+                    vitae, vel nihil recusandae inventore! Culpa quis debitis ipsa itaque dolorum. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Maxime tenetur, quibusdam dolorum sapiente placeat nobis et qui
+                    alias consequatur vitae, vel nihil recusandae inventore! Culpa quis debitis ipsa itaque dolorum. -
+                    7.4 magnitude earthquake in eastern Taiwan, the strongest in 25 years.</div>
+            </div>
+        </div>
+        <form class="annotate">
+            <div class="annotate-nosign"><input disabled="disabled" class="annotate-nosign__input"
+                    placeholder="Add comment"> <a class="annotate-nosign__button google-button" href="#"><img
+                        src="ae8997929dcc226d8d52.svg" alt="Google"> <span>Register with Google</span></a></div>
+        </form>
+        <div class="comments">
+            <div class="comments__top">16 comments</div>
+            <div class="comments__items">
+                <div class="comments__item">
+                    <div class="preview__top post__top"><a class="preview__user post__user" href="#"><img
+                                class="preview__img comments__user" src="138cbb8b8049136dc3ec.png" alt="User name">
+                            <div class="preview__name">Starlink helps</div>
+                        </a><img class="preview__tick post__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                        <div class="preview__date post__date">12 march</div>
+                    </div>
+                    <div class="preview__text comments__text">"FourFiveSeconds" is a song recorded by Barbadian singer
+                        Rihanna with the participation of American songwriter Kanye West and British singer, one of the
+                        founders of the British song group The Beatles Paul McCartney for her eighth studio album. The
+                        song was originally featured on</div>
+                </div>
+                <div class="comments-alert comments__alert">
+                    <div class="comments-alert__title">Want to see more comments or leave<br>your own?</div>
+                    <div class="comments-alert__text">Register via Google in just 2 clicks</div><a
+                        class="comments-alert__button google-button" href="#"><img src="ae8997929dcc226d8d52.svg"
+                            alt="Google"> <span>Register with Google</span></a>
+                    <div class="comments-alert__info">By registering, you agree to the <a href="#">Terms of Service</a>
+                        and <a href="">Privacy Policy</a>, including the <a href="#">Cookie Policy</a>.</div>
+                </div>
+            </div>
+        </div>
+        <div class="interaction"><a href="#" class="interaction__link active">Today </a><a href="#"
+                class="interaction__link">Yesterday </a><a href="#" class="interaction__link">Weekly </a><a href="#"
+                class="interaction__add red-button">
+                <div class="interaction__icon"><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.09137 1.25005V6.40875M7.09137 6.40875V11.75M7.09137 6.40875H1.75006M7.09137 6.40875H12.2501"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="square"></path>
+                    </svg></div><span>Add video</span>
+            </a></div>
+        <div class="tape">
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                <div class="preview__top"><a class="preview__user" href="#"><img class="preview__img"
+                            src="138cbb8b8049136dc3ec.png" alt="User name">
+                        <div class="preview__name">Starlink helps</div>
+                    </a><img class="preview__tick" src="d83bb92007b89ddbc79b.svg" alt="Tick">
+                    <div class="preview__date">12 march</div><button class="preview__btn tr-button"
+                        type="button">Follow</button>
+                </div>
+                <div class="preview__info"><a href="post.html" class="preview__title">Blue Monday - Extended Mix - Above
+                        & Beyond </a><a href="post.html" class="preview__text">- 7.4 magnitude earthquake in eastern
+                        Taiwan, the strongest in 25 years.<div class="preview__more">more</div></a></div><video
+                    data-src="images/video.mp4" preload="auto" controls class="preview__video lazy"></video>
+                <div class="preview__row">
+                    <div class="preview__sample">
+                        <div class="preview__bar" id="progressBar" data-current="500" data-total="1000">
+                            <div class="preview__fill" id="progressBarFill"></div>
+                        </div>
+                        <div class="preview__views">509 000/1M views</div>
+                    </div>
+                    <div class="preview-actions preview__actions">
+                        <div class="share preview-actions__item"><img class="preview-actions__icon"
+                                src="19f634fb85946a31ada8.svg" alt="Share">
+                            <div class="preview-actions__text">Share</div>
+                            <div class="share__list">
+                                <div class="share__action"><img src="648bcbb8888f1c3a0d0f.svg" alt="Copy"
+                                        class="preview-actions__icon">
+                                    <div class="share__place">Copy link</div>
+                                </div>
+                                <div class="share__action"><img src="b4dbab41787b24280ea6.svg" style="width:7px"
+                                        alt="Fb" class="preview-actions__icon">
+                                    <div class="share__place">Facebook</div>
+                                </div>
+                                <div class="share__action"><img src="7e7adb6f947ede9300b3.svg" alt="X"
+                                        style="width:14px" class="preview-actions__icon">
+                                    <div class="share__place">X post</div>
+                                </div>
+                            </div>
+                        </div><a download="images/video.mp4" href="images/video.mp4" class="preview-actions__item"><img
+                                class="preview-actions__icon" src="c08c387661ebb81800ec.svg" alt="Save">
+                            <div class="preview-actions__text">Save</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="search-list container">
+        <ul class="search-list__item">
+            <li><a class="search-list__link" href="#test">Statistical Analytics Career</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
