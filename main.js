@@ -174,12 +174,67 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('load', lazyLoadVideos);
 
     // Select all elements with the class "preview__btn"
-var buttons = document.querySelectorAll(".preview__btn");
+    var buttons = document.querySelectorAll(".preview__btn");
 
-// Loop through each button and add click event listener
-buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
-        this.style.display = 'none';
+    // Loop through each button and add click event listener
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            this.style.display = 'none';
+        });
     });
-});
+
+       // Function to check if the device is mobile
+       function isMobileDevice() {
+        return window.matchMedia("(max-width: 991px)").matches;
+    }
+
+    // Function to toggle the "active" class for the "share__list" element
+    function toggleShareListActive(event) {
+        // Check if the device is mobile
+        if (isMobileDevice()) {
+            // Check if the target element or its parent is an element of the "share__list" or "share__action" list
+            if (event.target.closest('.share__list') || event.target.closest('.share__action')) {
+                return; // If so, exit the function
+            }
+
+            // Get the "share__list" element
+            var shareList = event.currentTarget.querySelector('.share__list');
+
+            // Toggle the "active" class for the "share__list" element
+            shareList.classList.toggle('active');
+
+            // Prevent event bubbling to avoid triggering click event handlers on the document
+            event.stopPropagation();
+        }
+    }
+
+    // Add click event listener to each "share" button
+    document.querySelectorAll('.share').forEach(function (shareButton) {
+        shareButton?.addEventListener('click', toggleShareListActive);
+    });
+
+    // Add click event listener to the document
+    document.addEventListener('click', function (event) {
+        // Check if the device is mobile
+        if (isMobileDevice()) {
+            // Check if the target element or its parent is an element of the "share" area
+            if (!event.target.closest('.share')) {
+                // Remove the "active" class from all "share__list" elements
+                document.querySelectorAll('.share__list').forEach(function (shareList) {
+                    shareList.classList.remove('active');
+                });
+            }
+        }
+    });
+
+    // Add scroll event listener
+    window.addEventListener('scroll', function () {
+        // Check if the device is mobile
+        if (isMobileDevice()) {
+            // Remove the "active" class from all "share__list" elements if it exists
+            document.querySelectorAll('.share__list.active').forEach(function (shareList) {
+                shareList.classList.remove('active');
+            });
+        }
+    });
 })
